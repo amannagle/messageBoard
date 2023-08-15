@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(action="/new", method="post")
+    label(for="user") User
+    input(type="text", name="user",id="user")
+    label(for="message") Message
+    input(type="text", name="message" id="message")
+    br
+    button(type="submit") Submit
